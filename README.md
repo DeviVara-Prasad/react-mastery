@@ -22,5 +22,51 @@ multiple dynamic children -> [child1,child2]
 6.ReactDOM.createRoot(domnode,options) -> it takes dom node from the DOM and creates a root,
 where we can insert our code using root.render(element);
 
+React Series - Episode 02 - Igniting
+
+7. What is NPM?
+NPM is a world's largest package registry where open source developers acorss the world use NPM to share and borrow.
+NPM CLI is used to interact with npm, this cli is used to download package required by the developers
+
+8. What is Parcel/WebPack? Why do we need it?
+Parcel is bundler which is used to bundle our code, minify the code, compressed and clean the code before using them in Production. They provide different features HMR(Hot Module Replacement), File Watching, Live Server during developement etc..
+
+9. What is .parcel-cache?
+.parcel-cache store information about your project while building, son whenever it re-builds it doesn't have to re-parse and re-analyze everything from scratch. this is why parcel is so fast in development mode. you need ignore this folder while commiting by keeping it in .gitignore file
+
+10. What is npx?
+npx is a node package eXcecute which is used to execute some package without the need of installing them in our local.
+
+11. What is the difference betweeen dependencies and devDependencies?
+dependencies are the packages that we needed for our project. devDependencies are the dependencies that we needed only to help us during development and production builds but those are not useful in actual project.
+
+12. What is Tree Shaking?
+Tree Shaking is a term that commonly used in javascript context for dead code elimination .
+It relies main on ES6 module syntax i.e import and export. The name and concept has been popularized by the module bundler rollup.
+
+13. 5 superpowers of parcel and describe any three?
+devServer,Tree shaking, file watcher,.parcel-cache,Image Optimization, minification, Differential Bundling, Hot Module Replacement.
+devServer -> provides a live reload server in development mode.
+tree shaking -> removed dead code i.e code which is not in use.
+file watcher-> file watcher written in c++ constanly looks our file changes and re-builds accordingly.
+HMR(Hot Module Replacemeng) -> HMR exchanges or add or deletes modules while an application is running without full reload.
+Differential Bundling -> it creates different bundles to support old browsers as well.
+
+14. What is '.gitignore'? Why do we need it?
+gitIgnore is a file where mention file and folder names that are not needed to commit.
+node_modules, .parcel-cache,dist to be placed here.
+
+15. what is difference bbetween package.json and package-lock.json?
+package.json contains information about our package and scripts information and information about dependencies and devDependencies along with approx versions. package-lock.json contains information about our packages with exact versions.
+
+16. what is dist folder?
+dist folder is a place where our final builded code will be placed.
+
+17. what is browserslist
+browserslist is an array, which defines in which versions and browsers that our code should definetly work
+
+18. ^(caret) and ~(tilde)
+^ (caret) -> compatible with version -> will update you to all future minor/patch version without increment the major version, ^1.2.3 will use release < 2.0.0
+~(tilde) -> approx equal to version, will update you to all patch versiones without incrementing the minor version. ~1.2.3 will use release < 1.3.0
 
 
