@@ -69,4 +69,20 @@ browserslist is an array, which defines in which versions and browsers that our 
 ^ (caret) -> compatible with version -> will update you to all future minor/patch version without increment the major version, ^1.2.3 will use release < 2.0.0
 ~(tilde) -> approx equal to version, will update you to all patch versiones without incrementing the minor version. ~1.2.3 will use release < 1.3.0
 
+React Series - Episode 03 - Laying the foundation
+
+19. What is JSX?
+JSX is a Syntax Extension for JavaScript that let you write HTML like syntax inside javascript files.
+
+20. SuperPowers of JSX?
+JSX lets us write the HTML like syntax inside javascript. and we can javasript inside {} of JSX elements.
+some rules of JSX -> attribute names should be in camelcase.
+
+21. Role of type attribute in script tag? What options can i use there?
+type attribute of script tag indicates the type of script represented by the element.
+
+
+22. {TitleComponent} vs {<TitleComponent/>} vs {<TileComponent></TitleComponent>} in JSX?
+{TitleComponent} gives you error as functions are not valid react child. other two works similar and as expected.
+
 
