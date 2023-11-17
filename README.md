@@ -86,3 +86,20 @@ type attribute of script tag indicates the type of script represented by the ele
 {TitleComponent} gives you error as functions are not valid react child. other two works similar and as expected.
 
 
+React Series = Episode 04 - Show me the code
+
+/**
+ * Food Order App
+ *    -Header
+ *      -Logo
+ *      -NavBar
+ *    -Body
+ *      -Search
+ *      -Restaurant Container
+ *          -Restaurant Card
+ *    -Footer
+ *      -Copyright
+ *      -Links
+ *      -Address
+ *      -Contact
+ */
